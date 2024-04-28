@@ -1,18 +1,21 @@
-//CRIANDO SLIDE PARA BANNER
-//Declarando Variaveis
+// Declarando Variaveis
 let imagens = ['img/section-banner/web/banner-1-pc.png', 'img/section-banner/web/banner-2-pc.png', 'img/section-banner/web/banner-3-pc.png', 'img/section-banner/web/banner-4-pc.png'];
 let index = 0;
-let time = 10000;
+let time = 5000;
 
-//Função Slide
-function slideShow(){
-    document.getElementById('img-banner').src=imagens[index];
-    index++;
+// Função Slide
+function slideShow() {
+    document.getElementById('img-banner').style.opacity = '0';
+    setTimeout(function() {
+        document.getElementById('img-banner').src = imagens[index];
+        index++;
 
-        if(index == imagens.length){
+        if (index == imagens.length) {
             index = 0;
         }
-        setTimeout('slideShow()', time);
-}
 
+        document.getElementById('img-banner').style.opacity = '1';
+    }, 200);
+    setTimeout(slideShow, time);
+}
 slideShow();

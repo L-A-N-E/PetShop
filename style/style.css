@@ -5,18 +5,274 @@
     --azul-50: #D4E8FF;
     --azul-100: #8EC5FE;
     --azul-150: #5282B3;
-
+    --branco: #fff;
 }
+
+
+
 
 /* Estilização em padrão para qualquer página desse Projeto */
 * {
-    box-sizing: border-box;
+    box-sizing: border-box; 
     margin: 0;
     padding: 0;
     font-family: "Montserrat", sans-serif;
 }
 
+
+
+
 /* Estilização para página PRINCIPAL*/
 #pag-home {
     background-color: var(--bege-100 );
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    align-items: center;
+}
+
+
+
+
+/* Cabeçalho */
+#header {
+    padding: 20px;
+    display: flex;
+    width: 90vw;
+    height: 90px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#header-left {
+    width: auto;
+}
+
+#logo-header {
+    width: auto;
+    height: 50px;
+    cursor: pointer;
+}
+
+#header-right {
+    width: auto;
+}
+
+nav ul {
+    display: flex;
+    gap: 50px;
+}
+
+nav ul li {
+    display: inline-flex;
+    color: var(--azul-150);
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: ease 0.5s;
+    cursor: pointer; 
+}
+
+nav ul li:hover {
+    transition: ease 0.5s;
+    transform: scale(1.1);  
+    color: var(--azul-100);
+}
+
+
+
+/* Section Banner */
+#banner-container {
+    width: 100vw;
+    height: auto; 
+    margin-bottom: 50px;
+}
+
+#img-banner {
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease;
+}
+
+
+
+/* Section Sobre*/
+#sobre-container {
+    width: 80vw;
+    background-color: var(--azul-150);
+    overflow-y: hidden;
+    display: flex;
+    padding: 20px;
+    border-radius: 20px;
+    height: 440px;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.div-sobre {
+    width: 33%;
+
+}
+
+#img-sobre {
+    position: relative;
+    z-index: 2;
+    right: 100px;
+    height: 100%;
+}
+
+#title-sobre {
+    text-transform: uppercase;
+    font-weight: 700;
+    z-index: 1;
+    color: var(--branco);
+    font-size: 120px;
+}
+
+#sobre-h1 {
+    color: var(--azul-100);
+}
+
+#sobre-p {
+    color: var(--branco);
+    text-align: justify;
+}
+
+
+
+/* Section Produtos */
+#produtos-container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 96%;
+    height: auto;
+}
+
+#title-produtos {
+    text-transform: uppercase;
+    color: var(--bege-200);
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#cards {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    cursor: pointer;
+    padding: 30px;
+    border-radius: 20px;
+    height: 384px;
+    width: 222px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: ease 1s;
+}
+
+.card:hover {
+    transition: ease 1s;
+    transform: scale(1.1);
+}
+
+.azul {
+    background-color: var(--azul-150);
+}
+
+.bege {
+    background-color: var(--bege-200);
+}
+
+.img-card {
+    width: 50px;
+}
+
+.btn-azul {
+    cursor: pointer;
+    margin-top: 8px;
+    background-color: var(--azul-100);
+    border: none;
+    padding: 15px;
+    width: 160px;
+    border-radius: 10px;
+    transition: ease 0.5s;
+}
+
+.btn-azul:hover {
+    transition: ease 0.5s;
+    transform: scale(1.1);
+}
+
+.btn-bege {
+    cursor: pointer;
+    margin-top: 8px;
+    background-color: var(--bege-100);
+    border: none;
+    padding: 15px;
+    width: 160px;
+    border-radius: 10px;
+    transition: ease 0.5s;
+}
+
+.btn-bege:hover {
+    transition: ease 0.5s;
+    transform: scale(1.1);
+}
+
+.title-card {
+    color: var(--branco);
+    font-size: 22px;
+}
+
+.img-card {
+    width: 110px;
+}
+
+.p-card {
+    text-align: justify;
+    color: var(--branco);
+}
+
+
+
+
+
+
+/* RESPONSIVIDADE CORRIGINDO ERROS*/
+@media only screen and (max-width:1500px) {
+    #img-sobre {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width:900px) {
+    nav {
+        display: none;
+    }
+
+    #sobre-container {
+        padding: 15px;
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .div-sobre {
+        width: 80%;
+    }
+    
+    
+    #title-sobre {
+        font-size: 70px;
+        text-align: center;
+    }
+
 }
