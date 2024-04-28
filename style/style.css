@@ -1,0 +1,22 @@
+/* Variáveis */
+:root {
+    --bege-100: #FED690;
+    --bege-200: #b3893F;
+    --azul-50: #D4E8FF;
+    --azul-100: #8EC5FE;
+    --azul-150: #5282B3;
+
+}
+
+/* Estilização em padrão para qualquer página desse Projeto */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Estilização para página PRINCIPAL*/
+#pag-home {
+    background-color: var(--bege-100 );
+}
