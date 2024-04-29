@@ -45,7 +45,7 @@ function closeModalCachorro(){
 }
 
 
-//Modal Cachorro
+//Modal Gato
 function abrirModalGato(){
     const modalGato = document.querySelector('#display-none-g');
     modalGato.style.display = 'flex';

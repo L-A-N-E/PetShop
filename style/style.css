@@ -262,12 +262,13 @@ a:hover {
 
 #pets-left {
     border-radius: 20px;
-    height: 400px;
+    height: auto;
     background-color: var(--bege-200);
     width: 50%;
     display: flex;
     overflow: hidden;
     align-items: center;
+    padding-inline-end: 10px;
 }
 
 #text-cachorro {
@@ -281,12 +282,13 @@ a:hover {
 #pets-right {
     border-radius: 20px;
     overflow: hidden;
-    height: 400px;
+    height: auto;
     background-color: var(--azul-150);
     display: flex;
     width: 50%;
     overflow: hidden;
     align-items: center;
+    padding-inline-end: 10px;
 }
 
 #text-gato {
@@ -298,10 +300,12 @@ a:hover {
 }
 
 .img-pet {
+    width: 50%;
     margin-top: 50px;
 }
 
 .organizar {
+    height: auto;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -363,6 +367,7 @@ a:hover {
     border-radius: 20px;
     width: 50%;
     background-color: var(--bege-100);
+    height: auto;
 
 }
 
@@ -376,6 +381,7 @@ a:hover {
 }
 
 #img-cachorro-modal {
+    width: 100%;
     height: 100%;
 }
 
@@ -460,6 +466,7 @@ a:hover {
 }
 
 @media only screen and (max-width:900px) {
+    /*HEADER*/
     nav {
         display: none;
     }
@@ -470,14 +477,60 @@ a:hover {
         height: auto;
     }
     
+    /*SOBRE*/
     .div-sobre {
         width: 80%;
     }
-    
     
     #title-sobre {
         font-size: 70px;
         text-align: center;
     }
 
+
+    /*PETS*/
+    #pets-left {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    #text-cachorro {
+        text-align: center;
+    }
+
+
+    #pets-right {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    #text-gato {
+        text-align: center;
+    }
+
+    .img-pet {
+        margin-bottom: 15px;
+        margin-top: 0;
+    }
+}
+
+
+@media only screen and (max-width:484px){
+    /*PETS*/
+    #pets-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #pets-right {
+        width: 100%;
+    }
+
+    #pets-left {
+        width: 100%;
+    }
 }
