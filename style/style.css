@@ -342,7 +342,7 @@ a:hover {
 }
 
 
-/* MODAL */
+/* Modal Cachorro  */
 
 
 #modal-cachorro {
@@ -368,7 +368,15 @@ a:hover {
     flex-direction: column;
 }
 
+#img-cachorro-modal {
+    height: 100%;
+}
 
+#title-modal-c {
+    color: var(--bege-200);
+    font-size: 30px;
+    text-transform: uppercase;
+}
 
 
 
