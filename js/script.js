@@ -23,12 +23,24 @@ slideShow();
 
 //Modal
 function abrirModalCachorro(){
-    const modal = document.querySelector('#modal-cachorro');
-    modal.style.display = 'flex';
+    const modalCachorro = document.querySelector('#display-none');
+    modalCachorro.style.display = 'flex';
+
+    const removerCachorro = document.querySelector('#pets-left');
+    removerCachorro.style.display = 'none';
+
+    const removerGato = document.querySelector('#pets-right');
+    removerGato.style.display = 'none';
 }
 
 function closeModalCachorro(){
-    const modal = document.querySelector('#modal-cachorro')
-    modal.style.display = 'none'
+    const modalCachorro = document.querySelector('#display-none')
+    modalCachorro.style.display = 'none'
+    
+    const removerCachorro = document.querySelector('#pets-left');
+    removerCachorro.style.display = 'flex';
+
+    const removerGato = document.querySelector('#pets-right');
+    removerGato.style.display = 'flex';
 }
 
