@@ -19,3 +19,16 @@ function slideShow() {
     setTimeout(slideShow, time);
 }
 slideShow();
+
+
+//Modal
+function abrirModalCachorro(){
+    const modal = document.querySelector('#modal-cachorro');
+    modal.style.display = 'flex';
+}
+
+function closeModalCachorro(){
+    const modal = document.querySelector('#modal-cachorro')
+    modal.style.display = 'none'
+}
+

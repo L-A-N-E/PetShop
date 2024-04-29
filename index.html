@@ -22,11 +22,11 @@
         <div id="header-right">
             <nav>
                 <ul>
-                    <li>Home</li>
-                    <li>Sobre</li>
-                    <li>Produtos</li>
-                    <li>Pets</li>
-                    <li>Contato</li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#sobre-container">Sobre</a></li>
+                    <li><a href="index.html#produtos-container">Produtos</a></li>
+                    <li><a href="">Pets</a></li>
+                    <li><a href="">Contato</a></li>
                 </ul>
             </nav>
         </div>
@@ -103,6 +103,42 @@
         </div>
     </section>
 
+    <!-- Section Pets -->
+
+    <div id="modal-cachorro">
+        <div id="organizar-modal-cachorro">
+            <img src="img/section-adocao/cachorro-adoção.png" alt="">
+        </div>
+
+        <div id="organizar-modal-cachorro-informacoes">
+            <h3>Cachorro</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur perspiciatis culpa et qui dolore expedita. Neque dolores fuga debitis amet cupiditate ea nostrum sunt at. Perferendis neque optio voluptatem. Delectus!</p>
+            <button id="btn-fechar" onclick="closeModalCachorro()">Fechar</button>
+        </div>
+    </div>
+
+    <section id="pets-container">
+        <div id="pets-left">
+            <img class="img-pet " src="img/section-adocao/cachorro-adoção.png" alt="">
+            <div class="organizar">
+                <h2 id="text-cachorro">Deseja Adotar um <br><strong id="cachorrinho">Cachorrinho?</strong></h2>
+                <button id="informacoes-cachorro" onclick="abrirModalCachorro()">Ver Mais informações</button>
+            </div>
+        </div>
+
+        <div id="pets-right">
+            <img class="img-pet" src="img/section-adocao/gato-adoção.png" alt="">
+            <div class="organizar">
+                <h2 id="text-gato">Deseja Adotar um <br><strong id="gatinho">Gatinho?</strong></h2>
+                <button id="informacoes-gato" onclick="abrirModalGato()">Ver Mais informações</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Section Contato -->
+    <section id="contato-container">
+    </section>
 
 
     <!-- JS -->
