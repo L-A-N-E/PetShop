@@ -173,6 +173,7 @@ a:hover {
     gap: 20px;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 
 .card {
@@ -455,7 +456,15 @@ a:hover {
     padding: 10px;
 }
 
-
+#btnLadoEsquerdo, #btnLadoDireito{
+    display: none;
+    border-radius: 50%;
+    text-align: center;
+    padding: 15px;
+    color: white;
+    border: none;
+    background-color: var(--azul-100);
+}
 
 /* RESPONSIVIDADE CORRIGINDO ERROS*/
 @media only screen and (max-width:1500px) {
@@ -532,5 +541,11 @@ a:hover {
 
     #pets-left {
         width: 100%;
+    }
+    #btnLadoEsquerdo, #btnLadoDireito{
+        display: block;
+    }
+    #item_2, #item_3,#item_4,#item_5,#item_6{
+        display: none;
     }
 }
