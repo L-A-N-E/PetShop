@@ -21,9 +21,9 @@ function slideShow() {
 slideShow();
 
 
-//Modal
+//Modal Cachorro
 function abrirModalCachorro(){
-    const modalCachorro = document.querySelector('#display-none');
+    const modalCachorro = document.querySelector('#display-none-c');
     modalCachorro.style.display = 'flex';
 
     const removerCachorro = document.querySelector('#pets-left');
@@ -34,7 +34,31 @@ function abrirModalCachorro(){
 }
 
 function closeModalCachorro(){
-    const modalCachorro = document.querySelector('#display-none')
+    const modalCachorro = document.querySelector('#display-none-c')
+    modalCachorro.style.display = 'none'
+    
+    const removerCachorro = document.querySelector('#pets-left');
+    removerCachorro.style.display = 'flex';
+
+    const removerGato = document.querySelector('#pets-right');
+    removerGato.style.display = 'flex';
+}
+
+
+//Modal Cachorro
+function abrirModalGato(){
+    const modalGato = document.querySelector('#display-none-g');
+    modalGato.style.display = 'flex';
+
+    const removerCachorro = document.querySelector('#pets-left');
+    removerCachorro.style.display = 'none';
+
+    const removerGato = document.querySelector('#pets-right');
+    removerGato.style.display = 'none';
+}
+
+function closeModalGato(){
+    const modalCachorro = document.querySelector('#display-none-g')
     modalCachorro.style.display = 'none'
     
     const removerCachorro = document.querySelector('#pets-left');
