@@ -91,3 +91,21 @@ function closeModalGato(){
     removerGato.style.display = 'flex';
 }
 
+
+//
+
+function enviarFormulario(){
+    Swal.fire({
+        title: "Formulário Enviado",
+        icon: "success",
+        width: 600,
+        padding: "3em",
+        color: "#5282B3",
+        background: "#fff",
+        backdrop: `
+            rgba(0,0,123,0.4)
+            url("../img/contato/nyan-cat.gif")
+            center top
+            no-repeat`
+    })
+}
