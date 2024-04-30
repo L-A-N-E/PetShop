@@ -20,12 +20,15 @@
     margin: 0;
     padding: 0;
     font-family: "Montserrat", sans-serif;
+    scroll-behavior: smooth;
+    transition: scroll-behavior 13s ease-in-out; 
 }
 
 
 
 
 /* Estilização para página PRINCIPAL*/
+
 #pag-home {
     background-color: var(--bege-100 );
     display: flex;

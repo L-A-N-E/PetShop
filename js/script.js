@@ -20,6 +20,7 @@ function slideShow() {
 }
 slideShow();
 
+
 //Função para botão para passar os cards
 let lista_produtos = ['#item_1','#item_2','#item_3','#item_4','#item_5','#item_6'];
 let index_produtos = 1;
@@ -44,7 +45,9 @@ function passarLado(){
     }
 }
 
+
 //Modal Cachorro
+//Abrir Modal do Cachorro
 function abrirModalCachorro(){
     const modalCachorro = document.querySelector('#display-none-c');
     modalCachorro.style.display = 'flex';
@@ -55,7 +58,7 @@ function abrirModalCachorro(){
     const removerGato = document.querySelector('#pets-right');
     removerGato.style.display = 'none';
 }
-
+//Fechar Modal do Cachorro
 function closeModalCachorro(){
     const modalCachorro = document.querySelector('#display-none-c')
     modalCachorro.style.display = 'none'
@@ -69,6 +72,7 @@ function closeModalCachorro(){
 
 
 //Modal Gato
+//Abrir Modal do Gato
 function abrirModalGato(){
     const modalGato = document.querySelector('#display-none-g');
     modalGato.style.display = 'flex';
@@ -79,7 +83,7 @@ function abrirModalGato(){
     const removerGato = document.querySelector('#pets-right');
     removerGato.style.display = 'none';
 }
-
+//Fechar Modal do Gato
 function closeModalGato(){
     const modalCachorro = document.querySelector('#display-none-g')
     modalCachorro.style.display = 'none'
@@ -92,8 +96,7 @@ function closeModalGato(){
 }
 
 
-//
-
+//Validação de Campo Formulário
 function enviarFormulario(){
     let contato_nome = document.getElementById("campo-nome").value
     let contato_email = document.getElementById("campo-email").value
