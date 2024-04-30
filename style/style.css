@@ -126,7 +126,7 @@ a:hover {
 
 #img-sobre {
     position: relative;
-    z-index: 2;
+    z-index: 100;
     right: 100px;
     height: 100%;
 }
@@ -258,6 +258,7 @@ a:hover {
     width: 80vw;
     display: flex;
     gap: 15px;
+    justify-content: center;
 }
 
 #pets-left {
@@ -349,12 +350,16 @@ a:hover {
 /* Modal Cachorro  */
 
 #display-none-c{
+    width: 100%;
     display: none;
+    align-items: center;
+    justify-content: center;
 }
 
 #modal-cachorro {
     padding: 40px;
-    width: 100%;
+    height: 440px;
+    width: 70%;
     background-color: var(--bege-50);
     border-radius: 20px;
     display: flex;
@@ -367,12 +372,14 @@ a:hover {
     border-radius: 20px;
     width: 50%;
     background-color: var(--bege-100);
-    height: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
 
 }
 
 #organizar-modal-cachorro-informacoes {
-    width: 90%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     color: var(--bege-150);
@@ -381,7 +388,7 @@ a:hover {
 }
 
 #img-cachorro-modal {
-    width: 100%;
+    width: auto;
     height: 100%;
 }
 
@@ -405,12 +412,15 @@ a:hover {
 /* Modal Gato  */
 
 #display-none-g{
+    width: 90%;
     display: none;
+    justify-content: center;
 }
 
 #modal-gato {
     padding: 40px;
-    width: 100%;
+    height: 440px;
+    width: 70%;
     background-color: var(--azul-100);
     border-radius: 20px;
     display: flex;
@@ -423,11 +433,15 @@ a:hover {
     border-radius: 20px;
     width: 50%;
     background-color: var(--azul-150);
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
 
 }
 
 #organizar-modal-gato-informacoes {
-    width: 90%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     color: var(--branco);
@@ -436,6 +450,7 @@ a:hover {
 }
 
 #img-gato-modal {
+    width: auto;
     height: 100%;
 }
 
@@ -459,8 +474,11 @@ a:hover {
 
 /* RESPONSIVIDADE CORRIGINDO ERROS*/
 @media only screen and (max-width:1500px) {
+    /*SOBRE*/
     #img-sobre {
-        display: none;
+        height: 410px;
+        top: 19px;
+        left: -30%;
     }
 
 }
@@ -480,6 +498,14 @@ a:hover {
     /*SOBRE*/
     .div-sobre {
         width: 80%;
+    }
+
+    #img-sobre{ 
+        height: 80%;
+        width: 80%;
+        top: 0px;
+        left: 0px;
+        margin-bottom: 10px;
     }
     
     #title-sobre {
@@ -518,12 +544,79 @@ a:hover {
     }
 }
 
+@media only screen and (max-width:700px){
+    /*PETS & MODAL*/
+    #modal-cachorro {
+        width: 80%;
+        height: auto;
+        padding: 1rem;
+        flex-direction: column;
+    }
 
-@media only screen and (max-width:484px){
-    /*PETS*/
+    #modal-gato {
+        width: 80%;
+        height: auto;
+        padding: 1rem;
+        flex-direction: column;
+    }
+
+    #organizar-modal-cachorro {
+        width: 100%;
+    }
+
+    #organizar-modal-gato {
+        width: 100%;
+    }
+
+    #organizar-modal-cachorro-informacoes {
+        width: 100%;
+    }
+
+    #organizar-modal-gato-informacoes {
+        width: 100%;
+    }
+
+    #title-modal-c {
+        text-align: center;
+    }
+
+    #title-modal-g {
+        text-align: center;
+    }
+
+    .afastar-ul {
+        margin-left: 5px;
+    }
+
+}
+
+@media only screen and (max-width:500px){
+    /*SOBRE*/
+    #title-sobre {
+        font-size: 50px;
+    }
+
+    #img-sobre {
+        display: none;
+    }
+
+    /*PRODUTOS*/
+    #title-produtos {
+        font-size: 30px;
+    }
+    /*PETS & MODAL*/
     #pets-container {
+        width: 90%;
         flex-direction: column;
         align-items: center;
+    }
+
+    #display-g{
+        width: 100%;
+    }
+
+    #gato-modal {
+        width: 90%;
     }
 
     #pets-right {
