@@ -545,6 +545,33 @@ input::placeholder{
     color: var(--azul-150);
 }
 
+
+/* Footer */
+#footer-container{
+    margin-top: 50px;
+    width: 100vw;
+    height: 400px;
+    background-color: var(--azul-50);
+    display: flex;
+    flex-direction: column;
+}
+
+#fim {
+    gap: 15px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h5 {
+    font-size: 14px;
+    color: #5282B3;
+}
+
+
 /* RESPONSIVIDADE CORRIGINDO ERROS*/
 @media only screen and (max-width:1500px) {
     /*SOBRE*/
