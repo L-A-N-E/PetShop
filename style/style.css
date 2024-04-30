@@ -534,7 +534,15 @@ input::placeholder{
     font-weight: 700;
     width: 30%;
     cursor: pointer;
-    margin-top: 20px
+    margin-top: 20px;
+    transition: ease 0.5s;
+}
+
+#btn-enviar:hover {
+    transform: scale(1.06);
+    transition: ease 0.5s;
+    background-color: var(--azul-50);
+    color: var(--azul-150);
 }
 
 /* RESPONSIVIDADE CORRIGINDO ERROS*/
