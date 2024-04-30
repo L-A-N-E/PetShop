@@ -20,6 +20,29 @@ function slideShow() {
 }
 slideShow();
 
+//Função para botão para passar os cards
+let lista_produtos = ['#item_1','#item_2','#item_3','#item_4','#item_5','#item_6'];
+let index_produtos = 1;
+
+function passarLado(){
+
+    let produtoMostrado = document.querySelector(lista_produtos[index_produtos]);
+    produtoMostrado.style.display = 'flex';
+
+    if(index_produtos != 0){
+        let produtoMostra = document.querySelector(lista_produtos[index_produtos-1]);
+        produtoMostra.style.display = 'none';
+    }else{
+        let produtoMostra = document.querySelector(lista_produtos[5]);
+        produtoMostra.style.display = 'none';
+    }
+
+    index_produtos ++;
+
+    if(index_produtos == lista_produtos.length){
+        index_produtos = 0;
+    }
+}
 
 //Modal Cachorro
 function abrirModalCachorro(){
