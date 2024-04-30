@@ -95,17 +95,32 @@ function closeModalGato(){
 //
 
 function enviarFormulario(){
-    Swal.fire({
-        title: "Formulário Enviado",
-        icon: "success",
-        width: 600,
-        padding: "3em",
-        color: "#5282B3",
-        background: "#fff",
-        backdrop: `
-            rgba(0,0,123,0.4)
-            url("../img/contato/nyan-cat.gif")
-            center top
-            no-repeat`
-    })
+    let contato_nome = document.getElementById("campo-nome").value
+    let contato_email = document.getElementById("campo-email").value
+    let contato_telefone = document.getElementById("campo-telefone").value
+    let contato_interesse = document.getElementById("campo-interesse").value
+    if(contato_nome == "" || contato_email == "" || contato_telefone == "" || contato_interesse == ""){
+        Swal.fire({
+            title: "Preencha os Campos",
+            icon: "error",
+            width: 600,
+            padding: "3em",
+            color: "#5282B3",
+            background: "#fff",
+        })
+    }else{
+        Swal.fire({
+            title: "Formulário Enviado",
+            icon: "success",
+            width: 600,
+            padding: "3em",
+            color: "#5282B3",
+            background: "#fff",
+            backdrop: `
+                rgba(0,0,123,0.4)
+                url("../img/contato/nyan-cat.gif")
+                center top
+                no-repeat`
+        })
+    }
 }
