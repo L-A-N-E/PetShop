@@ -104,6 +104,8 @@ nav li:first-child{
     align-items: flex-start;
     justify-content: flex-start;
     backdrop-filter: blur(10px);
+    animation-duration: 0.3s; 
+    animation-fill-mode: forwards; 
 }
 
 .menu li {
@@ -117,12 +119,6 @@ nav li:first-child{
 .btn-abrir-menu{
     display: none;
 }
-
-
-
-
-
-
 
 /* Section Banner */
 #banner-container {
@@ -815,3 +811,19 @@ h5 {
     }
 
 }
+@keyframes slideFromRight {
+    from {
+      right: -250px;
+    }
+    to {
+      right: 0;
+    }
+  }
+  @keyframes slideToRight {
+    from {
+      right: 0;
+    }
+    to {
+      right: -250px;
+    }
+  }
