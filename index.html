@@ -15,21 +15,36 @@
 <body id="pag-home">
     <!-- Cabeçalho -->
     <header id="header">
-        <div id="header-left">
-            <img id="logo-header" src="img/logo/logo-petshop.png" alt="Logo">
-        </div>
+        <nav>
+            <!-- Mobile -->
+            <ul class="menu">
+                <!-- Btn Fechar Menu Mobile-->
+                <li onclick="closeMenu()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#5282b3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#sobre-container">Sobre</a></li>
+                <li><a href="index.html#produtos-container">Produtos</a></li>
+                <li><a href="index.html#pets-container">Pets</a></li>
+                <li><a href="index.html#contato-container">Contato</a></li>
+            </ul>
 
-        <div id="header-right">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#sobre-container">Sobre</a></li>
-                    <li><a href="index.html#produtos-container">Produtos</a></li>
-                    <li><a href="index.html#pets-container">Pets</a></li>
-                    <li><a href="index.html#contato-container">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
+            <!-- Desktop -->
+            <ul>
+                <!-- Logo -->
+                <li><a href="#"><img id="logo" src="img/logo/logo-petshop.png" alt=""></a></li>
+                <!-- Home -->
+                <li><a class="ocultarNav" href="index.html">Home</a></li>
+                <!-- Sobre -->
+                <li><a class="ocultarNav" href="index.html#sobre-container">Sobre</a></li>
+                <!-- Produtos -->
+                <li><a class="ocultarNav" href="index.html#produtos-container">Produtos</a></li>
+                <!-- Pets -->
+                <li><a class="ocultarNav" href="index.html#pets-container">Pets</a></li>
+                <!-- Contato -->
+                <li><a class="ocultarNav" href="index.html#contato-container">Contato</a></li>
+                <!-- Btn Abrir Menu Mobile-->
+                <li class="btn-abrir-menu" onclick="openMenu()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#5282b3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
     </header>
 
     <!-- Banner -->
@@ -218,8 +233,8 @@
     <!-- Footer -->
     <footer id="footer-container">
         <div id="fim">
-            <img src="img/logo/logo-petshop.png" alt="">
-            <h5>@Todos os Direitos Reservados</h5>
+            <img id="logo" src="img/logo/logo-petshop.png" alt="">
+            <h5>@2024-Todos os Direitos Reservados: LANE</h5>
         </div>
     </footer>
 

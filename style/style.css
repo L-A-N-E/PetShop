@@ -20,15 +20,14 @@
     margin: 0;
     padding: 0;
     font-family: "Montserrat", sans-serif;
-    scroll-behavior: smooth;
-    transition: scroll-behavior 13s ease-in-out; 
+    scroll-behavior: smooth;    /* Suavidade no link <a> para as seções do site */
+    transition: scroll-behavior 5s ease-in-out; /* Transição mais Suave */
 }
 
 
 
 
 /* Estilização para página PRINCIPAL*/
-
 #pag-home {
     background-color: var(--bege-100 );
     display: flex;
@@ -40,56 +39,87 @@
 }
 
 
-
-
 /* Cabeçalho */
 #header {
-    padding: 20px;
-    display: flex;
-    width: 90vw;
-    height: 90px;
-    align-items: center;
-    justify-content: space-around;
-}
-
-#header-left {
-    width: auto;
-}
-
-#logo-header {
-    width: auto;
-    height: 50px;
-    cursor: pointer;
-}
-
-#header-right {
-    width: auto;
+    width: 100vw;
+    height: auto;
+    padding: 2rem;
+    background-color: var(--bege-100);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
+    width: 100%;
+    list-style: none;
     display: flex;
-    gap: 50px;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-nav ul li {
-    display: inline-flex;
+nav li {
+    height: 50px;
+}
+
+nav a {
+    height: 100%;
+    padding: 0px 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
     color: var(--azul-150);
     font-weight: 700;
     text-transform: uppercase;
-    cursor: pointer; 
+    transition: ease 0.2s;
 }
 
-a {
-    text-decoration: none;
-    color: var(--azul-150);
-    transition: ease 0.5s;
-}
-
-a:hover {
-    transition: ease 0.5s;
-    transform: scale(1.1);  
+nav a:hover {
     color: var(--azul-100);
+    transition: ease 0.3s;
 }
+
+#li-logo {
+    cursor: none;
+}
+
+#logo {
+    width: 200px;
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: var(--bege-100);
+    box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    backdrop-filter: blur(10px);
+}
+
+.menu li {
+    width: 100%;
+}
+
+.menu a {
+    width: 100%;
+}
+
+.btn-abrir-menu{
+    display: none;
+}
+
+
+
+
 
 
 
@@ -252,6 +282,17 @@ a:hover {
 .p-card {
     text-align: justify;
     color: var(--branco);
+}
+
+#btnLadoEsquerdo, #btnLadoDireito{
+    display: none;
+    border-radius: 50%;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid var(--azul-150);
+    font-weight: 900;
+    color: var(--azul-150);
+    background-color: var(--azul-50);
 }
 
 
@@ -473,16 +514,6 @@ a:hover {
     padding: 10px;
 }
 
-#btnLadoEsquerdo, #btnLadoDireito{
-    display: none;
-    border-radius: 50%;
-    text-align: center;
-    padding: 15px;
-    color: white;
-    border: none;
-    background-color: var(--azul-100);
-}
-
 
 /* Contato */
 #contato-container {
@@ -515,7 +546,7 @@ input {
     color: var(--branco);
     width: 100%;
     background-color: var(--azul-150);
-    border: solid 3px var(--branco);
+    border: solid 1px var(--branco);
     border-radius: 10px;
     padding: 5px;
     padding-top: 10px;
@@ -588,24 +619,28 @@ h5 {
 
 @media only screen and (max-width:900px) {
     /*HEADER*/
-    nav {
+    .ocultarNav {
         display: none;
     }
 
-    #sobre-container {
-        padding: 15px;
-        flex-direction: column;
-        height: auto;
+    .btn-abrir-menu{
+        display: flex;
     }
-    
+
+
     /*SOBRE*/
+    #sobre-container {
+        height: auto;
+        flex-direction: column;
+    }
+
     .div-sobre {
         width: 80%;
     }
 
     #img-sobre{ 
-        height: 80%;
-        width: 80%;
+        height: 100%;
+        width: 100%;
         top: 0px;
         left: 0px;
         margin-bottom: 10px;
@@ -751,4 +786,31 @@ h5 {
     #title-contato{
         font-size: 25px;
     }
+}
+
+@media only screen and (max-width:400px){
+    /*HEADER*/
+    #header {
+        padding: 10px;
+    }
+
+    .menu {
+        width: 100%;
+    }
+
+    #logo {
+        width: 100px;
+    }
+
+
+    /*SOBRE*/
+    #sobre-h1 {
+        font-size: 35px;
+    }
+
+    /*FOOTER*/
+    h5 {
+        text-align: center;
+    }
+
 }

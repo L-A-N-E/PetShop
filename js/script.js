@@ -1,3 +1,17 @@
+//Menu Hamburguer
+// Abrir Menu 
+function openMenu(){
+    const open = document.querySelector('.menu');
+    open.style.display = 'flex'
+}
+
+// Fechar Menu
+function closeMenu(){
+    const close = document.querySelector('.menu');
+    close.style.display = 'none'
+}
+
+
 // Declarando Variaveis
 let imagens = ['img/section-banner/web/banner-1-pc.png', 'img/section-banner/web/banner-2-pc.png', 'img/section-banner/web/banner-3-pc.png', 'img/section-banner/web/banner-4-pc.png'];
 let index = 0;
@@ -127,3 +141,4 @@ function enviarFormulario(){
         })
     }
 }
+
