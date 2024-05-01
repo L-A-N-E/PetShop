@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Petshop</title>
+
+    <!-- Icone -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/icon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
     <!-- CSS -->
     <link rel="stylesheet" href="style/style.css">
 
@@ -21,15 +28,15 @@
                 <!-- Btn Fechar Menu Mobile-->
                 <li onclick="closeMenu()" id="btn-fechar-menu"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#5282b3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
                 <!-- Home -->
-                <li><a href="index.html">Home</a></li>
+                <li onclick="closeMenu()"><a href="index.html">Home</a></li>
                 <!-- Sobre -->
-                <li><a href="index.html#sobre-container">Sobre</a></li>
+                <li onclick="closeMenu()"><a href="index.html#sobre-container">Sobre</a></li>
                 <!-- Produtos -->
-                <li><a href="index.html#produtos-container">Produtos</a></li>
+                <li onclick="closeMenu()"><a href="index.html#produtos-container">Produtos</a></li>
                 <!-- Pets -->
-                <li><a href="index.html#pets-container">Pets</a></li>
+                <li onclick="closeMenu()"><a href="index.html#pets-container">Pets</a></li>
                 <!-- Contato -->
-                <li><a href="index.html#contato-container">Contato</a></li>
+                <li onclick="closeMenu()"><a href="index.html#contato-container">Contato</a></li>
             </ul>
 
             <!-- Desktop -->
@@ -59,10 +66,14 @@
 
     <!-- Section Sobre -->
     <section id="sobre-container">
+            <!-- Titulo -->
             <div class="div-sobre">
                 <h1 id="title-sobre"><strong id="sobre-h1">Sobre</strong><br>Nós</h1>
             </div>
-            <div class="div-sobre"><img id="img-sobre" src="img/section-sobre/img-sobre.png" alt=""></div>
+            <!-- Imagem -->
+            <div class="div-sobre"><img id="img-sobre" src="img/section-sobre/img-sobre.png" alt="">
+            </div>
+            <!-- Parágrafo -->
             <div class="div-sobre">
                 <p id="sobre-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni temporibus soluta Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni temporibus soluta Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni temporibus soluta Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni temporibus soluta Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni temporibus soluta Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni temporibus soluta Lorem ipsum dolor sit amet  </p>
             </div>
@@ -140,6 +151,8 @@
 
     <!-- Section Pets -->
     <section id="pets-container">
+
+        <!-- Card Adoção Cachorro -->
         <div id="pets-left">
             <img class="img-pet " src="img/section-adocao/cachorro-adoção.png" alt="">
             <div class="organizar">
@@ -147,12 +160,15 @@
                 <button id="informacoes-cachorro" onclick="abrirModalCachorro()">Ver Mais informações</button>
             </div>
         </div>
+
         <!-- Modal Cachorro -->
         <div id="display-none-c">
             <div id="modal-cachorro">
+                <!-- Div Esquerda -->
                 <div id="organizar-modal-cachorro">
                     <img id="img-cachorro-modal" src="img/section-adocao/cachorro-adoção.png" alt="">
                 </div>
+                <!-- Div Direita -->
                 <div id="organizar-modal-cachorro-informacoes">
                     <h3 id="title-modal-c">Cachorro</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur perspiciatis culpa et qui dolore expedita. Neque dolores fuga debitis amet cupiditate ea nostrum sunt at. Perferendis neque optio voluptatem. Delectus!</p>
@@ -171,13 +187,14 @@
             </div>
         </div>
 
-
         <!-- Modal Gato -->
         <div id="display-none-g">
             <div id="modal-gato">
+                <!-- Div da Esquerda Modal-->
                 <div id="organizar-modal-gato">
                     <img id="img-gato-modal" src="img/section-adocao/gato-adoção.png" alt="">
                 </div>
+                <!-- Div da Direita Modal-->
                 <div id="organizar-modal-gato-informacoes">
                     <h3 id="title-modal-g">Gato</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur perspiciatis culpa et qui dolore expedita. Neque dolores fuga debitis amet cupiditate ea nostrum sunt at. Perferendis neque optio voluptatem. Delectus!</p>
@@ -196,6 +213,7 @@
             </div>
         </div>
 
+        <!-- Card Adoção Gato -->
         <div id="pets-right">
             <img class="img-pet" src="img/section-adocao/gato-adoção.png" alt="">
             <div class="organizar">
@@ -235,7 +253,7 @@
     </section>
 
 
-    <!-- Footer -->
+    <!-- Rodapé -->
     <footer id="footer-container">
         <div id="fim">
             <img id="logo" src="img/logo/logo-petshop.png" alt="">

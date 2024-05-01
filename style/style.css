@@ -40,6 +40,7 @@
 }
 
 
+
 /* Cabeçalho */
 #header {
     width: 100vw;
@@ -119,6 +120,8 @@ nav li:first-child{
 .btn-abrir-menu{
     display: none;
 }
+
+
 
 /* Section Banner */
 #banner-container {
@@ -293,6 +296,7 @@ nav li:first-child{
 }
 
 
+
 /* Section Pets */
 #pets-container {
     margin-top: 50px;
@@ -388,8 +392,8 @@ nav li:first-child{
 }
 
 
-/* Modal Cachorro  */
 
+/* Modal Cachorro  */
 #display-none-c{
     width: 100%;
     display: none;
@@ -452,7 +456,6 @@ nav li:first-child{
 
 
 /* Modal Gato  */
-
 #display-none-g{
     width: 90%;
     display: none;
@@ -512,6 +515,7 @@ nav li:first-child{
     width: 100%;
     padding: 1rem;
 }
+
 
 
 /* Contato */
@@ -579,6 +583,7 @@ input::placeholder{
 }
 
 
+
 /* Footer */
 #footer-container{
     margin-top: 50px;
@@ -605,16 +610,17 @@ h5 {
 }
 
 
-/* RESPONSIVIDADE CORRIGINDO ERROS*/
+
+/* RESPONSIVIDADE */
 @media only screen and (max-width:1500px) {
-    /*SOBRE*/
+    /* Sobre */
     #img-sobre {
         height: 410px;
         top: 19px;
         left: -30%;
     }
 
-    /*PETS*/
+    /* Pets */
     #modal-gato {
         width: 80%;
         height: auto;
@@ -627,7 +633,7 @@ h5 {
 }
 
 @media only screen and (max-width:900px) {
-    /*HEADER*/
+    /* Header */
     .ocultarNav {
         display: none;
     }
@@ -637,7 +643,7 @@ h5 {
     }
 
 
-    /*SOBRE*/
+    /* Sobre */
     #sobre-container {
         height: auto;
         flex-direction: column;
@@ -661,7 +667,7 @@ h5 {
     }
 
 
-    /*PETS*/
+    /* Pets */
     #pets-left {
         flex-direction: column;
         align-items: center;
@@ -692,7 +698,7 @@ h5 {
 }
 
 @media only screen and (max-width:700px){
-    /*PETS & MODAL*/
+    /* Pets & Modal */
     #modal-cachorro {
         width: 80%;
         height: auto;
@@ -737,7 +743,7 @@ h5 {
 
 
 
-    /* CONTATO */
+    /* Contato */
     #btn-enviar {
         width: 89%;
     }
@@ -748,7 +754,7 @@ h5 {
 }
 
 @media only screen and (max-width:500px){
-    /*SOBRE*/
+    /* Sobre */
     #title-sobre {
         font-size: 50px;
     }
@@ -757,11 +763,11 @@ h5 {
         display: none;
     }
 
-    /*PRODUTOS*/
+    /* Produtos */
     #title-produtos {
         font-size: 30px;
     }
-    /*PETS & MODAL*/
+    /* Pets & Modal */
     #pets-container {
         width: 90%;
         flex-direction: column;
@@ -794,7 +800,7 @@ h5 {
         display: none;
     }
 
-    /*CONTATO*/
+    /* Contato */
 
     #title-contato{
         font-size: 25px;
@@ -802,7 +808,7 @@ h5 {
 }
 
 @media only screen and (max-width:400px){
-    /*HEADER*/
+    /* Header */
     #header {
         padding: 10px;
     }
@@ -824,30 +830,35 @@ h5 {
     }
 
 
-    /*SOBRE*/
+    /* Sobre */
     #sobre-h1 {
         font-size: 35px;
     }
 
-    /*FOOTER*/
+    /* Footer */
     h5 {
         text-align: center;
     }
 
 }
+
+
+
+
+/* Animação do Menu */
 @keyframes slideFromRight {
     from {
-      right: -250px;
+        right: -250px;
     }
     to {
-      right: 0;
+        right: 0;
     }
-  }
-  @keyframes slideToRight {
+}
+@keyframes slideToRight {
     from {
-      right: 0;
+        right: 0;
     }
     to {
-      right: -250px;
+        right: -250px;
     }
-  }
+}
