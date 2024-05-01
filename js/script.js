@@ -3,14 +3,17 @@
 function openMenu(){
     const open = document.querySelector('.menu');
     open.style.display = 'flex'
+    open.style.animationName = 'slideFromRight';
 }
 
 // Fechar Menu
 function closeMenu(){
     const close = document.querySelector('.menu');
-    close.style.display = 'none'
+    close.style.animationName = 'slideToRight'; 
+    setTimeout(() => {
+        close.style.display = 'none'; 
+    }, 300); 
 }
-
 
 // Declarando Variaveis
 let imagens = ['img/section-banner/web/banner-1-pc.png', 'img/section-banner/web/banner-2-pc.png', 'img/section-banner/web/banner-3-pc.png', 'img/section-banner/web/banner-4-pc.png'];
