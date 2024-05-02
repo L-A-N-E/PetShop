@@ -272,7 +272,8 @@ nav li:first-child{
 
 .title-card {
     color: var(--branco);
-    font-size: 22px;
+    font-size: 19px;
+    text-align: center;
 }
 
 .img-card {
