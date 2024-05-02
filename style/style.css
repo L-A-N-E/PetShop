@@ -411,6 +411,7 @@ nav li:first-child{
     display: flex;
     gap: 30px;
     z-index: 100;
+    align-items: center;
 }
 
 #organizar-modal-cachorro {
@@ -466,12 +467,13 @@ nav li:first-child{
 #modal-gato {
     padding: 40px;
     height: auto;
-    width: 70%;
+    width: 80%;
     background-color: var(--azul-100);
     border-radius: 20px;
     display: flex;
     gap: 30px;
     z-index: 100;
+    align-items: center;
 }
 
 #organizar-modal-gato {
@@ -479,11 +481,9 @@ nav li:first-child{
     border-radius: 20px;
     width: 50%;
     background-color: var(--azul-150);
-    width: 50%;
     height: 100%;
     display: flex;
     justify-content: center;
-
 }
 
 #organizar-modal-gato-informacoes {
@@ -631,8 +631,47 @@ h5 {
         height: auto;
         width: 80%;
     }
+    /* Pets & Modal */
+    #modal-gato {
+        width: 80%;
+        height: auto;
+        padding: 1rem;
+        flex-direction: column;
+    }
+    #organizar-modal-gato {
+        width: 100%;
+    }
+    #organizar-modal-gato-informacoes {
+        width: 100%;
+    }
+    #title-modal-g {
+        text-align: center;
+    }
 }
+@media only screen and (max-width:1050px) {
+    /* Pets & Modal */
+    #modal-cachorro {
+        height: auto;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+    #organizar-modal-cachorro {
+        width: 100%;
+    }
 
+    #organizar-modal-cachorro-informacoes {
+        width: 100%;
+    }
+
+    #title-modal-c {
+        text-align: center;
+    }
+
+    .afastar-ul {
+        margin-left: 5px;
+    }
+}
 @media only screen and (max-width:900px) {
     /* Header */
     .ocultarNav {
@@ -699,51 +738,6 @@ h5 {
 }
 
 @media only screen and (max-width:700px){
-    /* Pets & Modal */
-    #modal-cachorro {
-        width: 80%;
-        height: auto;
-        padding: 1rem;
-        flex-direction: column;
-    }
-
-    #modal-gato {
-        width: 80%;
-        height: auto;
-        padding: 1rem;
-        flex-direction: column;
-    }
-
-    #organizar-modal-cachorro {
-        width: 100%;
-    }
-
-    #organizar-modal-gato {
-        width: 100%;
-    }
-
-    #organizar-modal-cachorro-informacoes {
-        width: 100%;
-    }
-
-    #organizar-modal-gato-informacoes {
-        width: 100%;
-    }
-
-    #title-modal-c {
-        text-align: center;
-    }
-
-    #title-modal-g {
-        text-align: center;
-    }
-
-    .afastar-ul {
-        margin-left: 5px;
-    }
-
-
-
     /* Contato */
     #btn-enviar {
         width: 89%;
